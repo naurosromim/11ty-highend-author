@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.html" %}
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <header>
+        {% include "partials/header.html" %}
+    </header>
+    
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        {% include "partials/footer.html" %}
+    </footer>
+</body>
+</html>
+
